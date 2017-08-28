@@ -1,5 +1,5 @@
 <plugins>
-<pyqgis_plugin name="QAgriSupport_preview" version="0.1.0">
+<pyqgis_plugin name="QAgriSupport" version="0.1.0">
 <description>AgriManager</description>
 <homepage>https://github.com/KasushiNishimura/QAgriSupport</homepage>
 <qgis_minimum_version>2.18</qgis_minimum_version>
