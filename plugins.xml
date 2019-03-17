@@ -1,6 +1,6 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <?xml-stylesheet type="text/xsl" href="" ?><plugins><pyqgis_plugin name="QAgriSupport" 
-       plugin_id="" version="0.2.0">
+       plugin_id="" version="1.0.0">
 <description>
 <![CDATA[Demonstration of a QGIS Plugin]]>
 </description>
