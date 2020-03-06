@@ -1,4 +1,4 @@
-QAgriSupportと連携するモバイルアプリケーションForegis用のでもデータです。
+QAgriSupportと連携するモバイルアプリケーションForegis用のデモデータです。
 
 Android端末ではmanagement_db.sqliteをダウンロードフォルダに保存してください。
 iOS端末ではmanagement_db.sqliteをダウンロード、利用アプリにForegisを指定してください。
