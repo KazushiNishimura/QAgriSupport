@@ -1,0 +1,6 @@
+QAgriSupportと連携するモバイルアプリケーションForegis用のでもデータです。
+
+Android端末ではmanagement_db.sqliteをダウンロードフォルダに保存してください。
+iOS端末ではmanagement_db.sqliteをダウンロード、利用アプリにForegisを指定してください。
+
+QRtest.pdfは製品ロールの登録、出荷・検品機能のテストに利用できます。
