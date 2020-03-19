@@ -1,7 +1,5 @@
 # 地図ベース生産管理アプリケーションQAgriSupport
 # モバイルアプリケーションForegis
-大規模飼料生産管理（農業生産・圃場管理）用のQGISプラグイン
-
 このページは農研機構生研支援センター「革新的技術開発・緊急展開事業（うち経営体強化プロジェクト）」の支援を受けて開発した、QAgriSupportとForegisの公開ページです。
 
 ![QAgriSupportとForegis](https://raw.githubusercontent.com/KazushiNishimura/QAgriSupport/master/resource/all.png "QAgriSupportとForegis")
