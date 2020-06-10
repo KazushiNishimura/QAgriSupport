@@ -29,3 +29,8 @@ https://raw.githubusercontent.com/KazushiNishimura/QAgriSupport/master/plugins.x
 ![foregis5](https://raw.githubusercontent.com/KazushiNishimura/QAgriSupport/master/resource/foregis5.png "foregis5")
 
 本プログラムを使用したことにより発生したいかなる損害に対して、農研機構、著作者、著作権者は責任を負いません。
+
+QAgriSupportとForegisに関するご質問、支援要請等については、
+http://www.naro.affrc.go.jp/laboratory/carc/inquiry/index.html
+までお願いします。
+
