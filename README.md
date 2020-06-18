@@ -20,6 +20,9 @@ https://raw.githubusercontent.com/KazushiNishimura/QAgriSupport/master/plugins.x
 
 本プログラムを使用したことにより発生したいかなる損害に対して、農研機構、著作者、著作権者は責任を負いません。
 
+QAgriSupport使用条件及び個人情報等の取り扱いについて
+https://github.com/KazushiNishimura/QAgriSupport/blob/master/terms_of_use/QAgriSupport.md
+
 # QAgriSupportと連動するモバイルアプリケーションForegis
 （公開に向けて準備中です）
 ![foregis1](https://raw.githubusercontent.com/KazushiNishimura/QAgriSupport/master/resource/foregis1.png "foregis1")
