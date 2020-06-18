@@ -30,6 +30,9 @@ https://raw.githubusercontent.com/KazushiNishimura/QAgriSupport/master/plugins.x
 
 本プログラムを使用したことにより発生したいかなる損害に対して、農研機構、著作者、著作権者は責任を負いません。
 
+[Foregisの使用条件及び個人情報の取り扱いについて][1]
+[1]:https://github.com/KazushiNishimura/QAgriSupport/blob/master/terms_of_use/Foregis.md
+
 QAgriSupportとForegisに関するご質問、支援要請等については、
 http://www.naro.affrc.go.jp/laboratory/carc/inquiry/index.html
 までお願いします。
