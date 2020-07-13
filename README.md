@@ -31,6 +31,9 @@ https://github.com/KazushiNishimura/QAgriSupport/blob/master/terms_of_use/QAgriS
 ![foregis4](https://raw.githubusercontent.com/KazushiNishimura/QAgriSupport/master/resource/foregis4.png "foregis4")
 ![foregis5](https://raw.githubusercontent.com/KazushiNishimura/QAgriSupport/master/resource/foregis5.png "foregis5")
 
+下記よりForegis用のデモデータをダウンロードできます。
+https://github.com/KazushiNishimura/QAgriSupport/blob/master/Foregis_DEMO_DATA/management_db.sqlite.zip
+
 本プログラムを使用したことにより発生したいかなる損害に対して、農研機構、著作者、著作権者は責任を負いません。
 
 Foregisの使用条件及び個人情報の取り扱いについて
