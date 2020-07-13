@@ -24,7 +24,7 @@ QAgriSupport使用条件及び個人情報等の取り扱いについて
 https://github.com/KazushiNishimura/QAgriSupport/blob/master/terms_of_use/QAgriSupport.md
 
 # QAgriSupportと連動するモバイルアプリケーションForegis
-iOS版公開しました。（2020/07/03）
+iOS版公開しました。（2020/07/13）
 
 https://apps.apple.com/jp/app/foregis/id1516220095
 
