@@ -28,8 +28,6 @@ iOS版公開しました。（2020/07/13）
 
 https://apps.apple.com/jp/app/foregis/id1516220095
 
-<a href="https://apps.apple.com/jp/app/foregis/id1516220095?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2020-07-12&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"></a>
-
 Foregisのデモデータは下記からダウンロード出来ます。
 
 https://github.com/KazushiNishimura/QAgriSupport/blob/master/Foregis_DEMO_DATA/management_db.sqlite.zip
