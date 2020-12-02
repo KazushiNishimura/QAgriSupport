@@ -7,8 +7,6 @@
 QAgriSupportについて、取り扱い説明書で、レポジトリのアドレスをコピペ出来ないとの指摘がありましたので、ここに貼り付けます。
 https://raw.githubusercontent.com/KazushiNishimura/QAgriSupport/master/plugins.xml
 
-QGIS2.18のダウンロードリンクもここに示しておきます。
-http://download.osgeo.org/qgis/windows/QGIS-OSGeo4W-2.18.28-3-Setup-x86.exe
 
 # 地図ベース生産管理アプリケーションQAgriSupport
 ![QAgriSupport1](https://raw.githubusercontent.com/KazushiNishimura/QAgriSupport/master/resource/QAG1.png "QAgriSupport1")
