@@ -4,6 +4,8 @@
 
 ![QAgriSupportとForegis](https://raw.githubusercontent.com/KazushiNishimura/QAgriSupport/master/resource/all.png "QAgriSupportとForegis")
 
+導入方法についても取扱説明書で手順を記載しておりますので、ご参照ください。
+
 QAgriSupportについて、取り扱い説明書で、レポジトリのアドレスをコピペ出来ないとの指摘がありましたので、ここに貼り付けます。
 https://raw.githubusercontent.com/KazushiNishimura/QAgriSupport/master/plugins.xml
 
