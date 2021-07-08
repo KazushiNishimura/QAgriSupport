@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="" ?><plugins><pyqgis_plugin name="QAgriSupport"
+       plugin_id="" version="2.0.1">
+<description>
+<![CDATA[Demonstration of a QGIS Plugin]]>
+</description>
+<about></about>
+<version>2.0.1</version>
+<qgis_minimum_version>2.18</qgis_minimum_version>
+<qgis_maximum_version>2.18</qgis_maximum_version>
+<homepage>
+<![CDATA[https://github.com/KazushiNishimura/QAgriSupport]]>
+</homepage>
+<file_name>QAgriSupport.2.0.1.zip</file_name>
+<icon></icon>
+<author_name><![CDATA[Kazushi Nishimura]]></author_name>
+<download_url>https://raw.githubusercontent.com/KazushiNishimura/QAgriSupport/master/QAgriSupport.2.0.1.zip</download_url>
+<uploaded_by><![CDATA[]]></uploaded_by>
+<create_date></create_date>
+<update_date></update_date>
+<experimental>False</experimental>
+<deprecated>False</deprecated>
+<tracker>
+<![CDATA[]]>
+</tracker>
+<repository>
+<![CDATA[https://github.com/KazushiNishimura/QAgriSupport]]>
+</repository>
+<tags>
+<![CDATA[QGIS,Agricurtural]]></tags>
+<downloads>0</downloads>
+<average_vote>0</average_vote>
+<rating_votes>0</rating_votes>
+</pyqgis_plugin>
+</plugins>
