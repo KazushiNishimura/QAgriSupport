@@ -36,7 +36,9 @@ Android版公開しました。（2020/07/16）
 https://play.google.com/store/apps/details?id=com.frog_pod.Foregis
 
 Foregisのデモデータは下記からダウンロード出来ます。
+
 （2022/01/27:デモデータの計画年度が古過ぎ、Foregisで計画を呼び出せない問題を修正しました。）
+
 https://github.com/KazushiNishimura/QAgriSupport/blob/master/Foregis_DEMO_DATA/management_db.sqlite.zip
 
 
@@ -48,7 +50,9 @@ https://github.com/KazushiNishimura/QAgriSupport/blob/master/Foregis_DEMO_DATA/m
 ![foregis5](https://raw.githubusercontent.com/KazushiNishimura/QAgriSupport/master/resource/foregis5.png "foregis5")
 
 下記よりForegis用のデモデータをダウンロードできます。
+
 （2022/01/27:デモデータの計画年度が古過ぎ、Foregisで計画を呼び出せない問題を修正しました。）
+
 https://github.com/KazushiNishimura/QAgriSupport/blob/master/Foregis_DEMO_DATA/management_db.sqlite.zip
 
 本プログラムを使用したことにより発生したいかなる損害に対して、農研機構、著作者、著作権者は責任を負いません。
