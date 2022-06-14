@@ -6,6 +6,12 @@
 
 導入方法についても取扱説明書で手順を記載しておりますので、ご参照ください。
 
+※QAgriSupport取扱説明書ver3_圧縮.pdfを掲載しましたが、容量制限の都合上、ファイルサイズを圧縮しています。非圧縮版をご希望の方は
+
+http://www.naro.affrc.go.jp/laboratory/carc/inquiry/index.html
+
+までお願いします。
+
 QAgriSupportについて、取り扱い説明書で、レポジトリのアドレスをコピペ出来ないとの指摘がありましたので、ここに貼り付けます。
 https://raw.githubusercontent.com/KazushiNishimura/QAgriSupport/master/plugins.xml
 
