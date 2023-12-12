@@ -1,0 +1,254 @@
+<script>
+        var myfunc =function(){
+        //出力場所を探す
+	        let output =document.getElementById("output");
+	        //CSVの指定
+	        getCsv('https://raw.githubusercontent.com/KazushiNishimura/QAgriSupport/master/webtest/log.csv');
+	 
+	        //CSVの取り込み
+	        function getCsv(data){
+	            // HTTPでファイルを読み込む
+	            let xhr = new XMLHttpRequest(); 
+	            //取得するファイルの設定
+	            xhr.open("GET",data,true);
+	            //レスポンスの確認
+	            xhr.onload = function (e) {
+	                if (xhr.readyState === 4) {//4は完了
+	                    if (xhr.status === 200) {//Done or load
+	                    //console.log(xhr.responseText);
+	                    let responce = xhr.responseText;
+	                    csvArr(responce);
+	                    } else {
+	                    console.error(xhr.statusText);
+	                    }
+	                }
+	            };
+	           //リクエストの要求送信
+	           xhr.send(null);
+	        }
+	 
+	        //CSVを配列に格納 dataArrはレスポンス
+	        function csvArr(dataArr){
+	            let arr =[];
+	            let list = dataArr.split('\n');
+	            //帰ってきているレスポンスを配列に格納する
+	            for(let i = 0; i <list.length; i++){
+	                arr[i] = list[i].split(',');
+	            }
+	            //console.log(arr);
+	            htmlWrite(arr);//出力をtableに設定する
+	        }
+	 
+	        //出力のタグを設定
+	        function htmlWrite(dataList){
+	            let insert ="";
+	            dataList.forEach(element => {
+	                insert +='<tr>';
+	                element.forEach((childElement) =>{
+	                    insert +=`<td>${childElement}</td>`;
+	                });
+	                insert +='</tr>'
+	            });
+	            
+	            //HTMLに出力
+	            output.innerHTML = insert;
+	        }
+	    }
+	    var myfunc2 =function(){
+        //出力場所を探す
+	        let output =document.getElementById("output");
+	        //CSVの指定
+	        getCsv('https://raw.githubusercontent.com/KazushiNishimura/QAgriSupport/master/webtest/log.csv');
+	 
+	        //CSVの取り込み
+	        function getCsv(data){
+	            // HTTPでファイルを読み込む
+	            let xhr = new XMLHttpRequest(); 
+	            //取得するファイルの設定
+	            xhr.open("GET",data,true);
+	            //レスポンスの確認
+	            xhr.onload = function (e) {
+	                if (xhr.readyState === 4) {//4は完了
+	                    if (xhr.status === 200) {//Done or load
+	                    //console.log(xhr.responseText);
+	                    let responce = xhr.responseText;
+	                    csvArr(responce);
+	                    } else {
+	                    console.error(xhr.statusText);
+	                    }
+	                }
+	            };
+	           //リクエストの要求送信
+	           xhr.send(null);
+	        }
+	 
+	        //CSVを配列に格納 dataArrはレスポンス
+	        function csvArr(dataArr){
+	            let arr =[];
+	            let arr_temp=[];
+	            let list = dataArr.split('\n');
+	            //帰ってきているレスポンスを配列に格納する
+	            //まずはヘッダー
+	            arr[0] = list[0].split(',');
+	            //残りをarr_tempに
+	            for(let i = 1; i <list.length; i++){
+	                arr_temp[i-1] = list[i].split(',');
+	            }
+	            //フィルターを適用
+	            let filterResult = arr_temp.filter( function (item) {
+				    
+				    return item[0] === field_id.value;
+				})
+				const merged = arr.concat(filterResult);
+				//console.log(filterResult);
+				//arr.push(filterResult);
+	            //console.log(arr[0][1]);
+	            const transpose = a => a[0].map((_, c) => a.map(r => r[c]));
+	            transpose(merged);
+	            htmlWrite(transpose(merged));//出力をtableに設定する
+	        }
+	 
+	        //出力のタグを設定
+	        function htmlWrite(dataList){
+	            let insert ="";
+	            dataList.forEach(element => {
+	                insert +='<tr>';
+	                element.forEach((childElement) =>{
+	                    insert +=`<td>${childElement}</td>`;
+	                });
+	                insert +='</tr>'
+	            });
+	            
+	            //HTMLに出力
+	            output.innerHTML = insert;
+	        }
+	    }
+	    
+		var myfunc3 = (e)=>{
+
+			let video  = document.createElement("video");
+			let canvas = document.getElementById("canvas");
+			let ctx    = canvas.getContext("2d");
+			let msg    = document.getElementById("msg");
+		
+			const userMedia = {video: {facingMode: "environment"}};
+			navigator.mediaDevices.getUserMedia(userMedia).then((stream)=>{
+				video.srcObject = stream;
+				video.setAttribute("playsinline", true);
+				video.play();
+				startTick();
+			});
+		
+			function startTick(){
+				msg.innerText = "Loading video...";
+				if(video.readyState === video.HAVE_ENOUGH_DATA){
+					canvas.height = video.videoHeight;
+					canvas.width = video.videoWidth;
+					ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+					let img = ctx.getImageData(0, 0, canvas.width, canvas.height);
+					let code = jsQR(img.data, img.width, img.height, {inversionAttempts: "dontInvert"});
+					if(code){
+						drawRect(code.location);// Rect
+						msg.innerText = code.data;// Data	
+						field_id.value=code.data	
+					}else{
+						msg.innerText = "Detecting QR-Code...";
+					}
+				}
+				setTimeout(startTick, 250);
+			}
+		
+			function drawRect(location){
+				drawLine(location.topLeftCorner,     location.topRightCorner);
+				drawLine(location.topRightCorner,    location.bottomRightCorner);
+				drawLine(location.bottomRightCorner, location.bottomLeftCorner);
+				drawLine(location.bottomLeftCorner,  location.topLeftCorner);
+			}
+		
+			function drawLine(begin, end){
+				ctx.lineWidth = 4;
+				ctx.strokeStyle = "#FF3B58";
+				ctx.beginPath();
+				ctx.moveTo(begin.x, begin.y);
+				ctx.lineTo(end.x, end.y);
+				ctx.stroke();
+			}
+		}	    
+	    
+	    
+	    
+    </script>
+    <style type="text/css">
+		body{
+	    width: 100%;
+	    margin: 0;
+	    font-size: 18px;
+		}
+		.main{
+		    width: 600px;
+		    margin: 50px auto;
+			}
+		table {
+		    width: 100%;
+		    text-align: center;
+		    border-collapse: collapse;
+		    border-spacing: 0;
+		    border-top: solid 1px #778ca3;
+			}
+		table tr:nth-child(2n+1) {
+		    background: #e9faf9;
+		}
+		table td {
+		    padding: 10px;
+		    border-bottom: solid 1px #778ca3;
+		}
+		h1{
+			text-align: center;
+		}
+		
+		#wrapper{
+			margin: 0px auto 0px auto;
+			width: 320px; height: auto;
+		}
+		
+		#msg{
+			margin: 0px; padding: 10px;
+			background-color: lightgray;
+			text-align: center;
+		}
+		
+		#canvas{
+			width: 100%; height: auto;
+			background-color: silver;
+		}
+	</style>
+	
+	<head>
+		<meta charset="UTF-8">
+		<!-- CSS -->
+		<!-- <link rel="stylesheet" href="./style.css"/>-->
+		<!-- JavaScript -->
+		<script src="./jsQR.js" defer></script>
+	</head>
+	
+    <body>
+        <div class="main">
+            <p>簡易履歴検索サンプル</p>
+            <!-- <p>圃場ごとのデータを表示します</p> -->
+            <input type="button" value="全て出力" onclick="myfunc()"><br>
+            <p></p>
+            <input type="text"  id="field_id">
+            <input type="button" value="圃場番号で絞り込む" onclick="myfunc2()"><br>
+            <p></p>
+            <input type="button" value="QRリーダーを立ち上げる" onclick="myfunc3()"><br>
+            <p></p>
+            <div id="msg">Unable to access video stream.</div>
+            <canvas id="canvas"></canvas>
+            <p></p>
+            <table id="output">
+            </table>
+        </div>
+    </body>
+
+
+</script>
